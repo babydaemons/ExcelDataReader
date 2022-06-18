@@ -21,6 +21,7 @@
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <LangVersion>8.0</LangVersion>
+    <Platforms>x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net48' ">
@@ -30,12 +31,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <AdditionalFiles Include="..\..\stylecop.json" Link="stylecop.json" />
+    <AdditionalFiles Include="..\stylecop.json" Link="stylecop.json" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="..\ExcelDataReader.snk" Link="ExcelDataReader.snk" />
-    <None Include="..\ExcelDataReader.png" Pack="true" PackagePath="\"/>
+    <None Include="..\ExcelDataReader.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <ItemGroup>
